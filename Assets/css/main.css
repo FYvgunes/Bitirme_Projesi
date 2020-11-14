@@ -315,6 +315,17 @@ template {
   left: 0;
   top: 0;
   z-index: 999; }
+  .navbar .menu-toggle {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: none; }
+    .navbar .menu-toggle span {
+      display: block;
+      width: 40px;
+      height: 2px;
+      margin-bottom: 8px;
+      background-color: #333; }
   .navbar .logo {
     font-size: 35px;
     color: #00b894;
