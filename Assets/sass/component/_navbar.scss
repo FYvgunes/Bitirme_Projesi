@@ -1,0 +1,106 @@
+$anarenk: #00b894;
+$siyah: #333;
+$beyaz: #fff;
+
+.navbar {
+  background-color: transparent;
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+
+  .menu-toggle {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: none;
+
+    span {
+      display: block;
+      width: 40px;
+      height: 2px;
+      margin-bottom: 8px;
+      background-color: $beyaz;
+    }
+  }
+
+  .logo {
+    font-size: 35px;
+    color: $anarenk;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+    padding: 0 30px;
+
+    li {
+      margin-right: 10px;
+      list-style: none;
+
+      a {
+        text-decoration: none;
+        font-weight: 600;
+        color: $beyaz;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+
+        &:hover {
+          color: $anarenk;
+        }
+
+        i {
+          color: $anarenk;
+          font-size: 19px;
+          transition: 0.5s;
+          -webkit-transition: 0.5s;
+          -moz-transition: 0.5s;
+          -ms-transition: 0.5s;
+          -o-transition: 0.5s;
+
+          &:hover {
+            color: $beyaz;
+          }
+        }
+      }
+    }
+  }
+}
+
+.stiyk {
+  background-color: $beyaz;
+  padding: 5px 20px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+
+  .menu-toggle {
+    span {
+      background-color: $siyah;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        color: $siyah;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+      }
+    }
+  }
+}

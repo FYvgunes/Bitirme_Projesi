@@ -14,9 +14,9 @@
   -o-transform: translateY($per);
 }
 @mixin transition($per) {
-  transition: $per;
-  -webkit-transition: $per;
-  -moz-transition: $per;
-  -ms-transition: $per;
-  -o-transition: $per;
+  transition: $per all;
+  -webkit-transition: $per all;
+  -moz-transition: $per all;
+  -ms-transition: $per all;
+  -o-transition: $per all;
 }

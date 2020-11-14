@@ -8,10 +8,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>SEV - Anasayfa</title>
   </head>
   <body>
+    <!-- Header  Start -->
+
     <div class="navbar">
       <a href="#" class="logo">SEV</a>
       <button class="menu-toggle">
@@ -53,5 +56,83 @@
         <a href="#" class="btn">Yardıma Muhtaçlar</a>
       </div>
     </div>
+
+    <!-- Header End -->
+
+    <!-- Made Helps Start -->
+    <section class="Helps" id="Helps">
+      <div class="section-title">
+        <h1><span>Y</span>ardımlar</h1>
+        <p>Etrafımızda olan küçük dostlarımız için oluşturulan yardımlar</p>
+      </div>
+      <div class="helpcards">
+        <div class="helpcard">
+          <img src="/Assets/images/res1.jpg" alt="" />
+          <h4>
+            Fatih Mah. Sair Sok. <br />
+            istanbul - Bağcılar
+          </h4>
+          <h4></h4>
+
+          <p>
+            Bulundukları Ortamda Toplamda 5 adet kedi var. Yemeğe ihtiyaçları
+            var
+          </p>
+          <a href="#" class="help-btn">Yardım Detay</a>
+        </div>
+        <div class="helpcard">
+          <img src="/Assets/images/res2.jpg" alt="" />
+          <h4>
+            Fatih Mah. Sair Sok. <br />
+            istanbul - Bağcılar
+          </h4>
+
+          <p>
+            Bulundukları Ortamda Toplamda 5 adet kedi var. Yemeğe ihtiyaçları
+            var
+          </p>
+          <a href="#" class="help-btn">Yardım Detay</a>
+        </div>
+        <div class="helpcard">
+          <img src="/Assets/images/res3.jpg" alt="" />
+          <h4>
+            Fatih Mah. Sair Sok. <br />
+            istanbul - Bağcılar
+          </h4>
+          <p>
+            Bulundukları Ortamda Toplamda 5 adet kedi var. Yemeğe ihtiyaçları
+            var
+          </p>
+          <a href="#" class="help-btn">Yardım Detay</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Made Helps End -->
+
+    <!--to do Made Helps Start -->
+
+    <!-- to do Made Helps End -->
+
+    <!-- Partners Start -->
+    <!-- Partners End -->
+
+    <!-- Helps Button Start -->
+    <!-- Helps Button End -->
+
+    <!-- Footer Start -->
+    <!-- Footer End -->
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if (this.scrollY > 10) {
+            $(".navbar").addClass("stiyk");
+          } else {
+            $(".navbar").removeClass("stiyk");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

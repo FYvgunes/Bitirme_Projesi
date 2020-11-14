@@ -1,61 +1,11 @@
 @import "component/reset.scss";
+@import "component/navbar";
 @import "pages/home.scss";
 @import "base/mixin";
 @import "base/colors";
+@import "base/title";
+@import "base/help_button";
 
-.navbar {
-  background-color: #fff;
-  width: 100%;
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999;
-
-  .menu-toggle {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    display: none;
-
-    span {
-      display: block;
-      width: 40px;
-      height: 2px;
-      margin-bottom: 8px;
-
-      background-color: $siyah;
-    }
-  }
-
-  .logo {
-    font-size: 35px;
-    color: $anarenk;
-    font-weight: 800;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  ul {
-    display: flex;
-    padding: 0 30px;
-    li {
-      margin-right: 10px;
-      list-style: none;
-
-      a {
-        text-decoration: none;
-        font-weight: 600;
-        color: $siyah;
-
-        i {
-          color: $anarenk;
-        }
-      }
-    }
-  }
-}
 .header {
   width: 100%;
   height: 100vh;
@@ -71,15 +21,18 @@
     text-align: center;
     padding: 0 100px;
     color: $beyaz;
+
     h1 {
       font-size: 60px;
     }
+
     p {
       padding: 15px 40px;
       font-size: 18px;
       letter-spacing: 1px;
       margin-top: -20px;
     }
+
     .btn {
       background-color: $anarenk;
       color: $beyaz;
@@ -93,6 +46,38 @@
       &:hover {
         letter-spacing: 1px;
       }
+    }
+  }
+}
+
+.helpcards {
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .helpcard {
+    width: calc(30% - 10px);
+    background-color: rgba(233, 233, 233, 0.562);
+    margin-left: 20px;
+    overflow: hidden;
+    padding: 10px;
+    @include border-radio(5px);
+    box-shadow: 3px 3px 20px 3px rgba(116, 116, 116, 0.5);
+    @include transition(0.5s);
+
+    &:hover {
+      transform: scale(1.05) rotate(3deg);
+      -webkit-transform: scale(1.05) rotate(3deg);
+      -moz-transform: scale(1.05) rotate(3deg);
+      -ms-transform: scale(1.05) rotate(3deg);
+      -o-transform: scale(1.05) rotate(3deg);
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
     }
   }
 }
