@@ -1,0 +1,22 @@
+@mixin border-radio($per) {
+  border-radius: $per;
+  -webkit-border-radius: $per;
+  -moz-border-radius: $per;
+  -ms-border-radius: $per;
+  -o-border-radius: $per;
+}
+
+@mixin tranform($per) {
+  transform: translateY($per);
+  -webkit-transform: translateY($per);
+  -moz-transform: translateY($per);
+  -ms-transform: translateY($per);
+  -o-transform: translateY($per);
+}
+@mixin transition($per) {
+  transition: $per;
+  -webkit-transition: $per;
+  -moz-transition: $per;
+  -ms-transition: $per;
+  -o-transition: $per;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "bitirmeprojesi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass Assets/sass/main.scss Assets/css/main.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FYvgunes/Bitirme-Projesi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FYvgunes/Bitirme-Projesi/issues"
+  },
+  "homepage": "https://github.com/FYvgunes/Bitirme-Projesi#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
