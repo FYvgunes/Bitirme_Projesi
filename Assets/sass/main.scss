@@ -128,3 +128,105 @@
     @include border-radio(50px);
   }
 }
+
+//Footer Kullanım alanı
+
+footer {
+  background-color: $anarenk;
+  padding: 30px;
+  color: $beyaz;
+
+  .footers {
+    display: grid;
+    grid-template-columns: 1fr 250px 450px;
+    grid-gap: 20px;
+
+    .footer {
+      padding: 10px 10px;
+
+      .logo {
+        font-size: 40px;
+        font-weight: 700;
+      }
+
+      p {
+        letter-spacing: 1px;
+        font-weight: 500;
+      }
+      h2 {
+        text-align: center;
+      }
+
+      ul {
+        li {
+          list-style: none;
+          padding-top: 10px;
+
+          a {
+            color: $beyaz;
+            text-decoration: none;
+          }
+
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+      ol {
+        li {
+          list-style: none;
+          padding-top: 10px;
+
+          a {
+            color: $beyaz;
+            text-decoration: none;
+          }
+
+          &:first-child {
+            padding-top: 0;
+          }
+        }
+      }
+    }
+  }
+  .sociol_icon {
+    text-align: center;
+    ul {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        list-style: none;
+        margin-right: 15px;
+        width: 32px;
+        height: 32px;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          @include transition(0.8s);
+          cursor: pointer;
+
+          &:hover {
+            transform: translateY(-5px);
+            -webkit-transform: translateY(-5px);
+            -moz-transform: translateY(-5px);
+            -ms-transform: translateY(-5px);
+            -o-transform: translateY(-5px);
+          }
+        }
+      }
+    }
+    h4 {
+      padding: 0;
+      margin-bottom: 0;
+      a {
+        cursor: pointer;
+        color: $beyaz;
+        text-decoration: none;
+      }
+    }
+  }
+}

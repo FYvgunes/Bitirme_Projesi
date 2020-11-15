@@ -8,6 +8,7 @@
   text-decoration: none;
   font-weight: 600;
   background-color: $anarenk;
+  margin-bottom: 10px;
   @include transition(0.5s);
 
   &:hover {
