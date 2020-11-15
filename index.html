@@ -282,6 +282,10 @@
             $(".navbar").removeClass("stiyk");
           }
         });
+        $(".menu-toggle").click(function () {
+          $(this).toggleClass("active");
+          $(".navbar-menu").toggleClass("active");
+        });
       });
     </script>
   </body>
