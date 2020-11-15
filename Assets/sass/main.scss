@@ -68,16 +68,27 @@
     @include transition(0.5s);
 
     &:hover {
-      transform: scale(1.05) rotate(3deg);
-      -webkit-transform: scale(1.05) rotate(3deg);
-      -moz-transform: scale(1.05) rotate(3deg);
-      -ms-transform: scale(1.05) rotate(3deg);
-      -o-transform: scale(1.05) rotate(3deg);
+      @include tranform(-10px);
     }
 
-    img {
+    .imagebox {
       width: 100%;
       height: 200px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        @include transition(0.5s);
+
+        &:hover {
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+        }
+      }
     }
   }
 }
