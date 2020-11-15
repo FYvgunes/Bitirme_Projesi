@@ -481,6 +481,11 @@ template {
   .help-btn:hover {
     letter-spacing: 0.6px; }
 
+@media (max-width: 750px) {
+  .header .header-title {
+    padding: 0 10000px;
+    color: red; } }
+
 .header {
   width: 100%;
   height: 100vh;
