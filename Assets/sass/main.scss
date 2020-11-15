@@ -69,6 +69,7 @@
 
     &:hover {
       @include tranform(-10px);
+      box-shadow: 5px 5px 20px 5px rgba(116, 116, 116, 0.5);
     }
 
     .imagebox {
@@ -90,5 +91,40 @@
         }
       }
     }
+  }
+}
+
+.partners {
+  padding: 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .partner {
+    width: calc(25% - 10px);
+
+    h1 {
+      text-align: center;
+      color: rgba(175, 175, 175, 0.566);
+    }
+  }
+}
+
+.Help_button {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    color: $beyaz;
+    background-color: $siyah;
+    font-size: 23px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 50px;
+    @include border-radio(50px);
   }
 }

@@ -474,7 +474,8 @@ template {
       -webkit-transform: translateY(-10px);
       -moz-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
-      -o-transform: translateY(-10px); }
+      -o-transform: translateY(-10px);
+      box-shadow: 5px 5px 20px 5px rgba(116, 116, 116, 0.5); }
     .helpcards .helpcard .imagebox {
       width: 100%;
       height: 200px;
@@ -493,3 +494,34 @@ template {
           -moz-transform: scale(1.2);
           -ms-transform: scale(1.2);
           -o-transform: scale(1.2); }
+
+.partners {
+  padding: 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .partners .partner {
+    width: calc(25% - 10px); }
+    .partners .partner h1 {
+      text-align: center;
+      color: rgba(175, 175, 175, 0.566); }
+
+.Help_button {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .Help_button a {
+    color: #fff;
+    background-color: #333;
+    font-size: 23px;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 50px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px; }
