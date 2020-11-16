@@ -6,6 +6,7 @@
 @import "base/title";
 @import "base/help_button";
 @import "component/responsive.scss";
+
 .header {
   width: 100%;
   height: 100vh;
@@ -137,12 +138,12 @@ footer {
   color: $beyaz;
 
   .footers {
-    display: grid;
-    grid-template-columns: 1fr 250px 450px;
-    grid-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     .footer {
-      padding: 10px 10px;
+      width: calc(33% - 10px);
 
       .logo {
         font-size: 40px;
@@ -226,6 +227,77 @@ footer {
         cursor: pointer;
         color: $beyaz;
         text-decoration: none;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .header {
+    .header-title {
+      text-align: center;
+      padding: 0 10px;
+      color: $beyaz;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        padding: 15px 40px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: -20px;
+      }
+    }
+  }
+
+  .helpcards {
+    padding: 0 0px;
+
+    .helpcard {
+      width: calc(40% - 10px);
+    }
+  }
+  .section-title {
+    h1 {
+      font-size: 30px;
+
+      span {
+        color: $anarenk;
+        font-size: 40px;
+      }
+    }
+  }
+}
+.partners {
+  .partner {
+    width: calc(52% - 10px);
+  }
+  footer {
+    .footers {
+      .footer {
+        width: calc(50% - 10);
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .helpcards {
+    padding: 0 0px;
+
+    .helpcard {
+      width: 100%;
+    }
+  }
+  .partners {
+    .partner {
+      width: 100%;
+    }
+  }
+  footer {
+    .footers {
+      .footer {
+        width: 100%;
       }
     }
   }

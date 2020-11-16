@@ -5,4 +5,15 @@
       color: red;
     }
   }
+
+  .helpcards {
+    padding: 0 00px;
+
+    .helpcard {
+      width: calc(30% - 10px);
+    }
+  }
 }
+@media (max-width: 400px) {
+}
+//responsive yapıyordum
