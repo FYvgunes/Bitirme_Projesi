@@ -96,18 +96,17 @@
 }
 
 .partners {
-  padding: 0 0;
+  padding: 0 80px;
   display: flex;
+  justify-content: left;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 
   .partner {
-    width: calc(25% - 10px);
+    width: calc(25% - 5px);
+    text-align: center;
 
     h1 {
-      text-align: center;
-      color: rgba(175, 175, 175, 0.566);
+      color: rgb(112, 112, 112);
     }
   }
 }
@@ -154,6 +153,7 @@ footer {
         letter-spacing: 1px;
         font-weight: 500;
       }
+
       h2 {
         text-align: center;
       }
@@ -173,6 +173,7 @@ footer {
           }
         }
       }
+
       ol {
         li {
           list-style: none;
@@ -190,8 +191,10 @@ footer {
       }
     }
   }
+
   .sociol_icon {
     text-align: center;
+
     ul {
       width: 100%;
       display: flex;
@@ -203,6 +206,7 @@ footer {
         margin-right: 15px;
         width: 32px;
         height: 32px;
+
         img {
           display: block;
           width: 100%;
@@ -220,9 +224,11 @@ footer {
         }
       }
     }
+
     h4 {
       padding: 0;
       margin-bottom: 0;
+
       a {
         cursor: pointer;
         color: $beyaz;
@@ -231,6 +237,7 @@ footer {
     }
   }
 }
+
 @media (max-width: 750px) {
   .header {
     .header-title {
@@ -258,6 +265,7 @@ footer {
       width: calc(40% - 10px);
     }
   }
+
   .section-title {
     h1 {
       font-size: 30px;
@@ -269,10 +277,12 @@ footer {
     }
   }
 }
+
 .partners {
   .partner {
     width: calc(52% - 10px);
   }
+
   footer {
     .footers {
       .footer {
@@ -281,6 +291,7 @@ footer {
     }
   }
 }
+
 @media (max-width: 400px) {
   .helpcards {
     padding: 0 0px;
@@ -289,15 +300,34 @@ footer {
       width: 100%;
     }
   }
+
   .partners {
     .partner {
       width: 100%;
     }
   }
+
   footer {
     .footers {
       .footer {
         width: 100%;
+      }
+    }
+  }
+  //Partnerler kısmı
+
+  .partners {
+    padding: 0 0;
+    margin: 0;
+    display: block;
+
+    .partner {
+      width: 100%;
+      text-align: center;
+
+      h1 {
+        color: rgb(112, 112, 112);
+        font-size: 60px;
       }
     }
   }

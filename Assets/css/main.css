@@ -580,16 +580,15 @@ template {
           -o-transform: scale(1.2); }
 
 .partners {
-  padding: 0 0;
+  padding: 0 80px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap; }
+  justify-content: left;
+  align-items: center; }
   .partners .partner {
-    width: calc(25% - 10px); }
+    width: calc(25% - 5px);
+    text-align: center; }
     .partners .partner h1 {
-      text-align: center;
-      color: rgba(175, 175, 175, 0.566); }
+      color: #707070; }
 
 .Help_button {
   width: 100%;
@@ -716,4 +715,14 @@ footer {
   .partners .partner {
     width: 100%; }
   footer .footers .footer {
-    width: 100%; } }
+    width: 100%; }
+  .partners {
+    padding: 0 0;
+    margin: 0;
+    display: block; }
+    .partners .partner {
+      width: 100%;
+      text-align: center; }
+      .partners .partner h1 {
+        color: #707070;
+        font-size: 60px; } }
