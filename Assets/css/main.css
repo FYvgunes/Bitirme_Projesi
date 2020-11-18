@@ -775,3 +775,154 @@ footer {
       .partners .partner h1 {
         color: #707070;
         font-size: 60px; } }
+
+body {
+  overflow-x: hidden !important; }
+
+.hakkimizda {
+  width: 100%;
+  height: 100vh;
+  background: url(/Assets/images/res7.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .hakkimizda .header-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 80px;
+    z-index: 100; }
+    .hakkimizda .header-title h1 {
+      font-size: 60px;
+      color: #fff;
+      padding: 15px;
+      margin: 0; }
+    .hakkimizda .header-title p {
+      padding: 0;
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+      text-align: center; }
+
+.about {
+  max-width: 1200px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  .about .imgbox {
+    width: 50%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.274);
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all; }
+    .about .imgbox img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s all;
+      -webkit-transition: 0.5s all;
+      -moz-transition: 0.5s all;
+      -ms-transition: 0.5s all;
+      -o-transition: 0.5s all;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px; }
+      .about .imgbox img:hover {
+        transform: scale(1.5) rotate(10deg);
+        -webkit-transform: scale(1.5) rotate(10deg);
+        -moz-transform: scale(1.5) rotate(10deg);
+        -ms-transform: scale(1.5) rotate(10deg);
+        -o-transform: scale(1.5) rotate(10deg); }
+  .about .contentbox {
+    width: 40%;
+    padding: 80px;
+    text-align: center; }
+    .about .contentbox p {
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: 0.5px; }
+
+@media (max-width: 900px) {
+  .about {
+    padding: 0 60px; }
+    .about .contentbox {
+      width: 40%;
+      padding: 0px 40px; } }
+
+@media (max-width: 750px) {
+  .about {
+    padding: 0 30px; }
+    .about .contentbox {
+      width: 50%;
+      padding: 0px 20px; }
+      .about .contentbox p {
+        font-size: 16px; } }
+
+@media (max-width: 400px) {
+  .about {
+    flex-wrap: wrap;
+    padding: 0 10px; }
+    .about .imgbox {
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      margin-bottom: 10px;
+      box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.274);
+      transition: 0.5s all;
+      -webkit-transition: 0.5s all;
+      -moz-transition: 0.5s all;
+      -ms-transition: 0.5s all;
+      -o-transition: 0.5s all; }
+      .about .imgbox img {
+        width: 100%;
+        height: 100%;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px; }
+        .about .imgbox img:hover {
+          transform: scale(1.5) rotate(10deg);
+          -webkit-transform: scale(1.5) rotate(10deg);
+          -moz-transform: scale(1.5) rotate(10deg);
+          -ms-transform: scale(1.5) rotate(10deg);
+          -o-transform: scale(1.5) rotate(10deg); }
+    .about .contentbox {
+      width: 100%;
+      padding: 10px;
+      text-align: center; }
+      .about .contentbox p {
+        font-size: 19px;
+        font-weight: 600;
+        letter-spacing: 0.5px; }
+  .hakkimizda .header-title {
+    padding: 0 15px;
+    z-index: 100; }
+    .hakkimizda .header-title h1 {
+      font-size: 35px;
+      color: #fff;
+      padding: 15px;
+      margin: 0; }
+    .hakkimizda .header-title p {
+      padding: 0;
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+      text-align: center; } }
