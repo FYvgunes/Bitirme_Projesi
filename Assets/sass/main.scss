@@ -49,8 +49,7 @@
 }
 
 .yaplacak-yardımlar {
-  max-width: 1200px;
-  padding: 0 40px;
+  padding: 20px 40px;
 
   .helsp {
     .help {
@@ -61,6 +60,10 @@
       @include border-radio(100px);
       margin-bottom: 20px;
       padding: 10px;
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
 
       .imagebox {
         display: flex;
@@ -81,9 +84,66 @@
           margin: 0;
 
           a {
-            color: red;
+            color: $anarenk;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
             float: right;
+
             padding-right: 50px;
+            @include transition(0.5s);
+            &:hover {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.YapılanYardımlar {
+  background-color: black;
+  .section-title {
+    color: $beyaz;
+  }
+  .helsp {
+    .help {
+      .imagebox {
+        color: $beyaz;
+        .content {
+          color: $beyaz;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .Yardım_panel {
+    .header-title {
+      padding: 0 10px;
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+  .yaplacak-yardımlar {
+    padding: 20px 5px;
+    .helsp {
+      .help {
+        @include border-radio(0px);
+        margin-bottom: 20px;
+        padding: 10px;
+        flex-direction: row;
+
+        &:last-child {
+          margin-bottom: 0px;
+        }
+        .imagebox {
+          display: flex;
+          flex-direction: column;
+          padding: 0 30px;
+          text-align: center;
+          .content {
           }
         }
       }

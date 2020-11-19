@@ -1043,8 +1043,7 @@ body {
       margin-top: -20px; }
 
 .yaplacak-yardımlar {
-  max-width: 1200px;
-  padding: 0 40px; }
+  padding: 20px 40px; }
   .yaplacak-yardımlar .helsp .help {
     display: flex;
     justify-content: center;
@@ -1057,6 +1056,8 @@ body {
     -o-border-radius: 100px;
     margin-bottom: 20px;
     padding: 10px; }
+    .yaplacak-yardımlar .helsp .help:last-child {
+      margin-bottom: 0px; }
     .yaplacak-yardımlar .helsp .help .imagebox {
       display: flex;
       align-items: center;
@@ -1076,6 +1077,49 @@ body {
         padding: 0;
         margin: 0; }
         .yaplacak-yardımlar .helsp .help .imagebox .content a {
-          color: red;
+          color: #00b894;
+          text-decoration: none;
+          font-size: 18px;
+          padding: 10px 15px;
           float: right;
-          padding-right: 50px; }
+          padding-right: 50px;
+          transition: 0.5s all;
+          -webkit-transition: 0.5s all;
+          -moz-transition: 0.5s all;
+          -ms-transition: 0.5s all;
+          -o-transition: 0.5s all; }
+          .yaplacak-yardımlar .helsp .help .imagebox .content a:hover {
+            font-weight: 600; }
+
+.YapılanYardımlar {
+  background-color: black; }
+  .YapılanYardımlar .section-title {
+    color: #fff; }
+  .YapılanYardımlar .helsp .help .imagebox {
+    color: #fff; }
+    .YapılanYardımlar .helsp .help .imagebox .content {
+      color: #fff; }
+
+@media (max-width: 400px) {
+  .Yardım_panel .header-title {
+    padding: 0 10px; }
+    .Yardım_panel .header-title h1 {
+      font-size: 30px; }
+  .yaplacak-yardımlar {
+    padding: 20px 5px; }
+    .yaplacak-yardımlar .helsp .help {
+      border-radius: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      -ms-border-radius: 0px;
+      -o-border-radius: 0px;
+      margin-bottom: 20px;
+      padding: 10px;
+      flex-direction: row; }
+      .yaplacak-yardımlar .helsp .help:last-child {
+        margin-bottom: 0px; }
+      .yaplacak-yardımlar .helsp .help .imagebox {
+        display: flex;
+        flex-direction: column;
+        padding: 0 30px;
+        text-align: center; } }
