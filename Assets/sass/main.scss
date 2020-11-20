@@ -2,149 +2,127 @@
 @import "component/navbar";
 @import "pages/home.scss";
 @import "pages/about.scss";
+@import "pages/yardımlar.scss";
 @import "base/mixin";
 @import "base/colors";
 @import "base/title";
 @import "base/help_button";
 @import "component/responsive.scss";
-
-.Yardımlar {
+.İletisim {
   width: 100%;
   height: 100vh;
-  background: url(/Assets/images/res4.jpg) no-repeat center;
+
+  background: url(/Assets/images/res3.jpg) no-repeat center;
   background-size: cover;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 99;
-    background-color: rgba(0, 0, 0, 0.356);
-  }
-
-  .header-title {
-    text-align: center;
-    padding: 0 100px;
-    color: $beyaz;
-    z-index: 100;
-
-    h1 {
-      font-size: 60px;
-    }
-
-    p {
-      padding: 15px 40px;
-      font-size: 18px;
-      letter-spacing: 1px;
-      margin-top: -20px;
-    }
-  }
 }
+#contact {
+  padding: 20px 50px;
 
-.yaplacak-yardımlar {
-  padding: 20px 40px;
+  .contacts {
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-  .helsp {
-    .help {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(219, 219, 219, 0.397);
-      @include border-radio(100px);
-      margin-bottom: 20px;
-      padding: 10px;
+    .contact {
+      width: calc(50% - 20px);
 
-      &:last-child {
-        margin-bottom: 0px;
-      }
+      .contact-form {
+        .form-grub {
+          display: flex;
+          flex-direction: column;
+          position: relative;
 
-      .imagebox {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+          input {
+            padding: 12px 0;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $siyah;
+            margin-bottom: 20px;
+            @include transition(0.8s);
+          }
 
-        img {
-          display: block;
-          width: 200px;
-          height: 200px;
-          padding: 5px;
-          object-fit: cover;
-          @include border-radio(50%);
+          label {
+            font-size: 16px;
+            font-weight: 500;
+
+            i {
+              color: $anarenk;
+              margin-right: 5px;
+            }
+          }
+
+          textarea {
+            border: none;
+            resize: vertical;
+            max-height: 100px;
+            min-height: 20px;
+            border-bottom: 1px solid $siyah;
+            margin-bottom: 20px;
+            outline: none;
+          }
         }
 
-        .content {
-          padding: 0;
-          margin: 0;
+        button {
+          border: none;
+          color: $beyaz;
 
-          a {
-            color: $anarenk;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px 15px;
-            float: right;
-
-            padding-right: 50px;
-            @include transition(0.5s);
-            &:hover {
-              font-weight: 600;
-            }
+          background-color: $anarenk;
+          padding: 10px 15px;
+          margin-top: 20px;
+          float: right;
+          font-weight: 500;
+          @include border-radio(5px);
+          @include transition(0.5s);
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(161, 0, 0);
           }
         }
       }
+      .contact-info {
+        padding: 20px 50px;
+      }
     }
   }
 }
-.YapılanYardımlar {
-  background-color: black;
-  .section-title {
-    color: $beyaz;
-  }
-  .helsp {
-    .help {
-      .imagebox {
-        color: $beyaz;
-        .content {
-          color: $beyaz;
+@media (max-width: 750px) {
+  #contact {
+    padding: 20px 50px;
+
+    .contacts {
+      .contact {
+        width: 100%;
+        .contact-form {
+          button {
+            float: left;
+          }
+        }
+        .contact-info {
+          padding: 20px 5px;
         }
       }
     }
   }
 }
 @media (max-width: 400px) {
-  .Yardım_panel {
-    .header-title {
-      padding: 0 10px;
-      h1 {
-        font-size: 30px;
-      }
-    }
-  }
-  .yaplacak-yardımlar {
-    padding: 20px 5px;
-    .helsp {
-      .help {
-        @include border-radio(0px);
-        margin-bottom: 20px;
-        padding: 10px;
-        flex-direction: row;
+  #contact {
+    padding: 20px 10px;
 
-        &:last-child {
-          margin-bottom: 0px;
-        }
-        .imagebox {
-          display: flex;
-          flex-direction: column;
-          padding: 0 30px;
-          text-align: center;
-          .content {
+    .contacts {
+      .contact {
+        width: 100%;
+        .contact-form {
+          button {
+            float: left;
           }
+        }
+        .contact-info {
+          padding: 20px 5px;
         }
       }
     }
