@@ -1,0 +1,58 @@
+@import "../base/mixin.scss";
+@import "../base/colors.scss";
+@import "../base/title";
+@import "../base/help_button";
+
+.body {
+  background-color: black;
+}
+#giris-yontemi {
+  .giris-yontemi {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      color: white;
+      font-size: 50px;
+      padding: 10px 0;
+      border-bottom: 1px solid White;
+    }
+    button {
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 10px 15px;
+      width: 350px;
+      position: relative;
+      margin-top: 10px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+
+      &:nth-child(even) {
+        background-color: $anarenk;
+        color: white;
+      }
+      i {
+        position: absolute;
+        left: 70px;
+        top: 10px;
+      }
+    }
+  }
+}
+.footer-admin {
+  text-align: center;
+  p {
+    color: $beyaz;
+    a {
+      color: $beyaz;
+      text-decoration: none;
+    }
+  }
+}
