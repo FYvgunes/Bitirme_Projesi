@@ -807,6 +807,112 @@ body {
   .help-btn:hover {
     letter-spacing: 0.6px; }
 
+.İletisim {
+  width: 100%;
+  height: 100vh;
+  background: url(/Assets/images/res3.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .İletisim .header-title {
+    padding: 0 40px; }
+    .İletisim .header-title h1 {
+      font-size: 30px; }
+
+#contact {
+  padding: 20px 50px; }
+  #contact .contacts {
+    padding: 20px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    #contact .contacts .contact {
+      width: calc(50% - 20px); }
+      #contact .contacts .contact .contact-form .form-grub {
+        display: flex;
+        flex-direction: column;
+        position: relative; }
+        #contact .contacts .contact .contact-form .form-grub input {
+          padding: 12px 0;
+          outline: none;
+          border: none;
+          border-bottom: 1px solid #333;
+          margin-bottom: 20px;
+          transition: 0.8s all;
+          -webkit-transition: 0.8s all;
+          -moz-transition: 0.8s all;
+          -ms-transition: 0.8s all;
+          -o-transition: 0.8s all; }
+        #contact .contacts .contact .contact-form .form-grub label {
+          font-size: 16px;
+          font-weight: 500; }
+          #contact .contacts .contact .contact-form .form-grub label i {
+            color: #00b894;
+            margin-right: 5px; }
+        #contact .contacts .contact .contact-form .form-grub textarea {
+          border: none;
+          resize: vertical;
+          max-height: 100px;
+          min-height: 20px;
+          border-bottom: 1px solid #333;
+          margin-bottom: 20px;
+          outline: none; }
+      #contact .contacts .contact .contact-form button {
+        border: none;
+        color: #fff;
+        background-color: #00b894;
+        padding: 10px 15px;
+        margin-top: 20px;
+        float: right;
+        font-weight: 500;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        cursor: pointer; }
+        #contact .contacts .contact .contact-form button:hover {
+          background-color: #a10000; }
+      #contact .contacts .contact .contact-info {
+        padding: 20px 50px; }
+
+.section-title {
+  padding: 10px 10px;
+  width: 100%;
+  text-align: center; }
+  .section-title h1 {
+    font-size: 40px; }
+    .section-title h1 span {
+      color: #00b894;
+      font-size: 50px; }
+
+.help-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #00b894;
+  margin-bottom: 10px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all; }
+  .help-btn:hover {
+    letter-spacing: 0.6px; }
+
 .Yardımlar {
   width: 100%;
   height: 100vh;
@@ -981,21 +1087,26 @@ body {
     font-size: 30px; }
     .section-title h1 span {
       color: #00b894;
-      font-size: 40px; } }
-
-.partners .partner {
-  width: calc(52% - 10px); }
-
-.partners footer .footers .footer {
-  width: calc(50% - 10); }
-
-.partners .about {
-  padding: 0 30px; }
-  .partners .about .contentbox {
-    width: 50%;
-    padding: 0px 20px; }
-    .partners .about .contentbox p {
-      font-size: 16px; }
+      font-size: 40px; }
+  .partners .partner {
+    width: calc(52% - 10px); }
+  .partners footer .footers .footer {
+    width: calc(50% - 10); }
+  .partners .about {
+    padding: 0 30px; }
+    .partners .about .contentbox {
+      width: 50%;
+      padding: 0px 20px; }
+      .partners .about .contentbox p {
+        font-size: 16px; }
+  #contact {
+    padding: 20px 50px; }
+    #contact .contacts .contact {
+      width: 100%; }
+      #contact .contacts .contact .contact-form button {
+        float: left; }
+      #contact .contacts .contact .contact-info {
+        padding: 20px 5px; } }
 
 @media (max-width: 400px) {
   .about {
@@ -1052,9 +1163,15 @@ body {
       margin: 0;
       color: #fff;
       font-size: 20px;
-      text-align: center; } }
-
-@media (max-width: 400px) {
+      text-align: center; }
+  #contact {
+    padding: 20px 10px; }
+    #contact .contacts .contact {
+      width: 100%; }
+      #contact .contacts .contact .contact-form button {
+        float: left; }
+      #contact .contacts .contact .contact-info {
+        padding: 20px 5px; }
   .helpcards {
     padding: 0 0px; }
     .helpcards .helpcard {
@@ -1156,95 +1273,3 @@ body {
         flex-direction: column;
         padding: 0 20px;
         text-align: center; } }
-
-.İletisim {
-  width: 100%;
-  height: 100vh;
-  background: url(/Assets/images/res3.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
-#contact {
-  padding: 20px 50px; }
-  #contact .contacts {
-    padding: 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-    #contact .contacts .contact {
-      width: calc(50% - 20px); }
-      #contact .contacts .contact .contact-form .form-grub {
-        display: flex;
-        flex-direction: column;
-        position: relative; }
-        #contact .contacts .contact .contact-form .form-grub input {
-          padding: 12px 0;
-          outline: none;
-          border: none;
-          border-bottom: 1px solid #333;
-          margin-bottom: 20px;
-          transition: 0.8s all;
-          -webkit-transition: 0.8s all;
-          -moz-transition: 0.8s all;
-          -ms-transition: 0.8s all;
-          -o-transition: 0.8s all; }
-        #contact .contacts .contact .contact-form .form-grub label {
-          font-size: 16px;
-          font-weight: 500; }
-          #contact .contacts .contact .contact-form .form-grub label i {
-            color: #00b894;
-            margin-right: 5px; }
-        #contact .contacts .contact .contact-form .form-grub textarea {
-          border: none;
-          resize: vertical;
-          max-height: 100px;
-          min-height: 20px;
-          border-bottom: 1px solid #333;
-          margin-bottom: 20px;
-          outline: none; }
-      #contact .contacts .contact .contact-form button {
-        border: none;
-        color: #fff;
-        background-color: #00b894;
-        padding: 10px 15px;
-        margin-top: 20px;
-        float: right;
-        font-weight: 500;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        transition: 0.5s all;
-        -webkit-transition: 0.5s all;
-        -moz-transition: 0.5s all;
-        -ms-transition: 0.5s all;
-        -o-transition: 0.5s all;
-        cursor: pointer; }
-        #contact .contacts .contact .contact-form button:hover {
-          background-color: #a10000; }
-      #contact .contacts .contact .contact-info {
-        padding: 20px 50px; }
-
-@media (max-width: 750px) {
-  #contact {
-    padding: 20px 50px; }
-    #contact .contacts .contact {
-      width: 100%; }
-      #contact .contacts .contact .contact-form button {
-        float: left; }
-      #contact .contacts .contact .contact-info {
-        padding: 20px 5px; } }
-
-@media (max-width: 400px) {
-  #contact {
-    padding: 20px 10px; }
-    #contact .contacts .contact {
-      width: 100%; }
-      #contact .contacts .contact .contact-form button {
-        float: left; }
-      #contact .contacts .contact .contact-info {
-        padding: 20px 5px; } }

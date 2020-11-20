@@ -1,0 +1,95 @@
+@import "../base/mixin.scss";
+@import "../base/colors.scss";
+@import "../base/title";
+@import "../base/help_button";
+
+.İletisim {
+  width: 100%;
+  height: 100vh;
+
+  background: url(/Assets/images/res3.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .header-title {
+    padding: 0 40px;
+    h1 {
+      font-size: 30px;
+    }
+  }
+}
+#contact {
+  padding: 20px 50px;
+
+  .contacts {
+    padding: 20px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .contact {
+      width: calc(50% - 20px);
+
+      .contact-form {
+        .form-grub {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+
+          input {
+            padding: 12px 0;
+            outline: none;
+            border: none;
+            border-bottom: 1px solid $siyah;
+            margin-bottom: 20px;
+            @include transition(0.8s);
+          }
+
+          label {
+            font-size: 16px;
+            font-weight: 500;
+
+            i {
+              color: $anarenk;
+              margin-right: 5px;
+            }
+          }
+
+          textarea {
+            border: none;
+            resize: vertical;
+            max-height: 100px;
+            min-height: 20px;
+            border-bottom: 1px solid $siyah;
+            margin-bottom: 20px;
+            outline: none;
+          }
+        }
+
+        button {
+          border: none;
+          color: $beyaz;
+
+          background-color: $anarenk;
+          padding: 10px 15px;
+          margin-top: 20px;
+          float: right;
+          font-weight: 500;
+          @include border-radio(5px);
+          @include transition(0.5s);
+          cursor: pointer;
+          &:hover {
+            background-color: rgb(161, 0, 0);
+          }
+        }
+      }
+      .contact-info {
+        padding: 20px 50px;
+      }
+    }
+  }
+}
