@@ -1,0 +1,79 @@
+@import "../base/mixin.scss";
+@import "../base/colors.scss";
+@import "../base/title";
+@import "../base/help_button";
+
+.giris {
+  h1 {
+    color: $beyaz;
+    font-size: 40px;
+    border-bottom: 1px solid $beyaz;
+    padding: 10px 0;
+    i {
+      display: block;
+      text-align: center;
+      color: $anarenk;
+      font-size: 80px;
+    }
+  }
+}
+.form-giris {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  input {
+    position: relative;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    &::before {
+      content: "\f007";
+      font-family: FontAwesome;
+      display: block;
+      z-index: 1000;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: red;
+      color: red;
+    }
+    .name-admin {
+      position: relative;
+      &::before {
+        content: "\f007";
+        font-family: FontAwesome;
+        display: block;
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: red;
+        color: red;
+      }
+    }
+  }
+  .form-grub {
+    width: 26%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    a {
+      color: $anarenk;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 10px 0 0 0;
+    }
+    button {
+      outline: none;
+      border: none;
+      background-color: $anarenk;
+      padding: 10px 15px;
+      color: $beyaz;
+    }
+  }
+}
