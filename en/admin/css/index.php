@@ -1,0 +1,1 @@
+<?php echo !defined("INDEX") ? header("Location: ".URL."/404.html") : null; ?>
